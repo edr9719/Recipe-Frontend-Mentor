@@ -1,0 +1,212 @@
+/*==================*/
+/*GENERAL CSS STYLES*/
+/*==================*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+.recipe {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+h2 {
+  font-family: "Young Serif", sans-serif;
+  color: hsl(14, 45%, 36%);
+}
+
+/*==========================*/
+/*RECIPE-OVERVIEW CSS STYLES*/
+/*==========================*/
+
+.recipe-overview {
+  width: 100%;
+}
+
+.recipe-overview img {
+  width: 100%;
+}
+
+.overview-text {
+  padding: 25px;
+}
+
+.overview-text h1 {
+  font-family: "Young Serif", sans-serif;
+  margin-bottom: 20px;
+  color: hsl(24, 5%, 18%);
+}
+
+.preparation-time {
+  width: 85%;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 2%;
+  background-color: hsl(330, 100%, 98%);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.preparation-time h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation-time ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.preparation-time li {
+  padding: 5px;
+  margin-left: 35px;
+  position: relative;
+}
+
+.preparation-time li::before {
+  content: "•";
+  color: hsl(332, 51%, 32%);
+  position: absolute;
+  left: -20px;
+}
+
+/*==========================*/
+/*INGREDIENTS CSS STYLES*/
+/*==========================*/
+
+.ingredients {
+  padding: 25px;
+  margin-top: 0;
+}
+
+.ingredients h2 {
+  margin-bottom: 10px;
+}
+
+.ingredients ul {
+  list-style-type: none;
+  margin-left: 30px;
+  position: relative;
+}
+
+.ingredients li {
+  padding: 5px;
+}
+
+.ingredients li::before {
+  content: "•";
+  color: hsl(332, 51%, 32%);
+  position: absolute;
+  left: -25px;
+}
+
+.hr-ingredients {
+  border: none; /* Remove the default border */
+  height: 1px; /* Set a thin height for the line */
+  background-color: hsl(30, 18%, 87%); /* Set the color of the line */
+  margin: 10px auto; /* Add vertical spacing */
+  width: 90%; /* Make it span the full width of the container */
+}
+
+/*=======================*/
+/*INSTRUCTIONS CSS STYLES*/
+/*=======================*/
+
+.instructions {
+  padding: 25px;
+}
+
+.instructions li::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+
+.instructions ol {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.instructions li {
+  padding: 5px;
+}
+
+/*====================*/
+/*NUTRITION CSS STYLES*/
+/*====================*/
+
+.nutrition {
+  padding: 25px;
+}
+
+.nutrition p {
+  margin-top: 10px;
+}
+
+.nutrition-label {
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 25px;
+}
+
+.nutrition-label p {
+  padding: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nutrition-label span {
+  display: inline-block;
+  width: 80px; /* Adjust this value as needed */
+  text-align: left; /* This aligns the text inside the span to the right */
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+
+.divider {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+@media (min-width: 375px) {
+  body {
+    width: 100vw;
+    padding: 25px;
+  }
+
+  .recipe {
+    max-width: 500px;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+
+  .recipe-overview img {
+    width: 90%;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 5px;
+  }
+
+  body {
+    width: 100vw;
+  }
+}
